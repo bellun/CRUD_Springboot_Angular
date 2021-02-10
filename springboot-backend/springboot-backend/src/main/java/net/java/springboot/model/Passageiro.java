@@ -14,10 +14,13 @@ public class Passageiro {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
+	
 	@Column(name = "nome")
 	private String nome;
+	
 	@Column(name = "sobre_nome")
 	private String sobreNome;
+	 
 	@Column(name = "email")
 	private String email;
 
