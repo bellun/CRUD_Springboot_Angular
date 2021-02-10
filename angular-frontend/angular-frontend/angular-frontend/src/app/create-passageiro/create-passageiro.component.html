@@ -1,0 +1,22 @@
+<div class="col-md-8 offset-md-3">
+  <h3>Cadastrar Passageiro</h3>
+  <form (ngSubmit)="onSubmit()" )>
+
+    <div class="form-group">
+      <label>Nome: </label>
+      <input type="text" class="form-control" id="nome" [(ngModel)]="passageiro.nome" name="nome">
+    </div>
+
+    <div class="form-group">
+      <label>Sobrenome: </label>
+      <input type="text" class="form-control" id="sobreNome" [(ngModel)]="passageiro.sobreNome" name="sobreNome">
+    </div>
+
+    <div class="form-group">
+      <label>Email: </label>
+      <input type="text" class="form-control" id="email" [(ngModel)]="passageiro.email" name="email">
+    </div>
+    <button class = "btn btn-success" type ="submit">Submit</button>
+
+  </form>
+</div>
