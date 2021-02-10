@@ -2,3 +2,6 @@
 springboot-backend/.metadata/.plugins/com.genuitec.eclipse.monitor/myeclipse-usage.properties
 springboot-backend/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
 springboot-backend/.metadata/.plugins/com.genuitec.eclipse.devstyle/recent.json
+springboot-backend/.metadata/.log
+*.log
+springboot-backend/.metadata/.plugins/com.genuitec.eclipse.devstyle/recent.json
