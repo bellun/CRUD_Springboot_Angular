@@ -15,5 +15,9 @@ export class PassageiroService {
       return this.httpClient.get<Passageiro[]>(`${this.baseURL}`);
     }
 
-   }
+    // tslint:disable-next-line: ban-types
+    createPassageiro(passageiro: Passageiro): Observable<Object>{
+      return this.httpClient.post(`${this.baseURL}`, passageiro);
+    }
+}
 
