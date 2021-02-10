@@ -1,5 +1,6 @@
 import { Passageiro } from './../passageiro';
 import { Component, OnInit } from '@angular/core';
+import { PassageiroService } from '../passageiro.service';
 
 
 @Component({
@@ -9,22 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PassageiroListComponent implements OnInit {
   passageiros: Passageiro[] = [];
+
 //teste
-  constructor() { }
+  constructor(private passageiroService: PassageiroService) { }
 
   ngOnInit(): void {
-    this.passageiros = [{
-      "id":1,
-      "nome":"Fernando",
-      "sobreNome": "Henrique",
-      "email": "fhanteros@gmai.com"
-    },
-  {
-     "id": 2,
-    "nome":"Clarissa",
-    "sobreNome": "Esteves",
-    "email": "claraesteves@gmail.com"
-  }];
+    this.getPassageiros();
   }
 
+  private getPassageiros(){
+    this.passageiroService.getPassageirosList().subscribe(data => {
+      this.passageiros = data;
+    });
+  }
 }
