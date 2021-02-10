@@ -1,6 +1,23 @@
+<nav class= "navbar navbar-expand-sm navbar-light" style="background-color: #3e9cdf;">
+  <ul class = "nav-bar-nav">
+
+    <li class="nav-item">
+      <a  routerLink="passageiros" routerLinkActive="active" class="nav-link">Lista de Passageiros</a>
+    </li>
+  </ul>
+</nav>
+
+
 <h1 class ="text-center">{{title}}</h1>
 
 <div class="container">
 
-  <app-passageiro-list></app-passageiro-list>
+<router-outlet></router-outlet>
+
 </div>
+
+<footer class= "footer">
+  <div class="container">
+    <span>Todos direitos reservados @bellun</span>
+  </div>
+</footer>
