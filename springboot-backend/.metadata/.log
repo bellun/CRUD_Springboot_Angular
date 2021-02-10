@@ -424,3 +424,45 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 21:06:23.221
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.llngaYhy => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:34.803
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:34.810
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@a78e9a1[org.springframework.tooling.boot.ls:1.24.0.202012131915(id=578)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:34.811
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.314
+!MESSAGE Boot LS startup time from start to initialized: 4501ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.486
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UiiGszkRisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.487
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.489
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.490
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.491
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.492
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UiiGszkR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.526
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.538
+!MESSAGE buffering callback sts4.classpath.UiiGszkR springboot-backend false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.540
+!MESSAGE executing callback sts4.classpath.UiiGszkR 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-09 23:01:39.608
+!MESSAGE executing callback sts4.classpath.UiiGszkR SUCCESS [done]

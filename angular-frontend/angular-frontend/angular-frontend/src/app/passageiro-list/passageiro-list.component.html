@@ -1,0 +1,23 @@
+<h2
+Passageiro List>
+</h2>
+<table class="table table-striped">
+
+<thead>
+
+  <tr>
+    <th>Nome</th>
+    <th>Sobre nome</th>
+    <th>Email</th>
+  </tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let passageiro of passageiros">
+      <td>{{passageiro.nome}}</td>
+      <td>{{passageiro.sobreNome}}</td>
+      <td>{{passageiro.email}}</td>
+    </tr>
+
+</tbody>
+</table>
