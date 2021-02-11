@@ -9,7 +9,7 @@ Passageiro List>
     <th>Nome</th>
     <th>Sobre nome</th>
     <th>Email</th>
-
+    <th>Ações</th>
   </tr>
 </thead>
 
@@ -18,6 +18,12 @@ Passageiro List>
       <td>{{passageiro.nome}}</td>
       <td>{{passageiro.email}}</td>
       <td>{{passageiro.sobreNome}}</td>
+
+      <td>
+        <button (click)="updatePassageiro(passageiro.id)" class = "btn btn-info">
+             Atualizar
+        </button>
+      </td>
     </tr>
 
 </tbody>

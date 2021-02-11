@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PassageiroService {
+  [x: string]: any;
 
   private baseURL = "http://localhost:8080/api/v1/passageiros";
 
@@ -15,6 +16,13 @@ export class PassageiroService {
       return this.httpClient.get<Passageiro[]>(`${this.baseURL}`);
     }
 
+    getEmployeeById(id: number): Observable<Passageiro>{
+      return this.httpClient.get<Passageiro>(`${this.baseURL}/${id}`);
+    }
+
+  updateEmployee(id: number, passageiro: Passageiro): Observable<Object>{
+    return this.httpClient.put(`${this.baseURL}/${id}`, passageiro);
+  }
     // tslint:disable-next-line: ban-types
     createPassageiro(passageiro: Passageiro): Observable<Object>{
       return this.httpClient.post(`${this.baseURL}`, passageiro);
