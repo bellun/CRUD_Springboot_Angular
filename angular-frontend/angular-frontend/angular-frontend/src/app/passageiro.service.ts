@@ -16,7 +16,7 @@ export class PassageiroService {
       return this.httpClient.get<Passageiro[]>(`${this.baseURL}`);
     }
 
-    getEmployeeById(id: number): Observable<Passageiro>{
+    gerPassageiroById(id: number): Observable<Passageiro>{
       return this.httpClient.get<Passageiro>(`${this.baseURL}/${id}`);
     }
 
@@ -27,5 +27,10 @@ export class PassageiroService {
     createPassageiro(passageiro: Passageiro): Observable<Object>{
       return this.httpClient.post(`${this.baseURL}`, passageiro);
     }
+
+    deletePassageiro(id: number): Observable<Object>{
+      return this.httpClient.delete(`${this.baseURL}/${id}`);
+    }
+
 }
 

@@ -29,4 +29,17 @@ export class PassageiroListComponent implements OnInit {
   updatePassageiro(id: number){
     this.router.navigate(['update-passageiro', id]);
   }
+
+passageiroDetails(id: number){
+  this.router.navigate(['passageiro-details', id]);
+
+}
+
+  deletePassageiro(id: number){
+    this.passageiroService.de(id).subscribe( (data: any) => {
+      console.log(data);
+      this.getPassageiros();
+    })
+  }
+
 }

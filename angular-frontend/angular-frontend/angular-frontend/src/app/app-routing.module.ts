@@ -1,3 +1,4 @@
+import { PassageiroDetailsComponent } from './passageiro-details/passageiro-details.component';
 import { CreatePassageiroComponent } from './create-passageiro/create-passageiro.component';
 import { PassageiroListComponent } from './passageiro-list/passageiro-list.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,8 @@ const routes: Routes = [
   {path: 'passageiros', component: PassageiroListComponent},
   {path: 'create-passageiro', component: CreatePassageiroComponent},
   {path : '', redirectTo: 'passageiros', pathMatch: 'full'},
-  {path: 'update-passageiro/:id', component: UpdatePassageiroComponent}
+  {path: 'update-passageiro/:id', component: UpdatePassageiroComponent},
+  {path: 'employee-details/:id', component: PassageiroDetailsComponent}
 
 ];
 

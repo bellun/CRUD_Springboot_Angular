@@ -1,4 +1,7 @@
 export class Passageiro {
+  getPassageiroById() {
+    throw new Error('Method not implemented.');
+  }
   createPassageiro(passageiro: Passageiro) {
     throw new Error('Method not implemented.');
   }

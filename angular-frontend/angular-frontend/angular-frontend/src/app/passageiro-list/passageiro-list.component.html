@@ -20,9 +20,9 @@ Passageiro List>
       <td>{{passageiro.sobreNome}}</td>
 
       <td>
-        <button (click)="updatePassageiro(passageiro.id)" class = "btn btn-info">
-             Atualizar
-        </button>
+        <button (click)="updatePassageiro(passageiro.id)" class = "btn btn-info">Atualizar</button>
+        <button (click)="deletePassageiro(passageiro.id)" class = "btn btn-danger "style="margin-left: 10px" >Apagar</button>
+        <button (click)="passageiroDetails(passageiro.id)" class = "btn btn-info" style="margin-left: 10px;">Acessar Cadastro</button>
       </td>
     </tr>
 
