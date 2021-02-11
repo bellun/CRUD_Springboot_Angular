@@ -1,6 +1,8 @@
+import { UpdatePassageiroComponent } from './../update-passageiro/update-passageiro.component';
 import { Passageiro } from './../passageiro';
 import { Component, OnInit } from '@angular/core';
 import { PassageiroService } from '../passageiro.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,7 +14,7 @@ export class PassageiroListComponent implements OnInit {
   passageiros: Passageiro[] = [];
 
 //teste
-  constructor(private passageiroService: PassageiroService) { }
+  constructor(private passageiroService: PassageiroService, private router: Router) { }
 
   ngOnInit(): void {
     this.getPassageiros();
@@ -23,4 +25,21 @@ export class PassageiroListComponent implements OnInit {
       this.passageiros = data;
     });
   }
+
+  updatePassageiro(id: number){
+    this.router.navigate(['update-passageiro', id]);
+  }
+
+passageiroDetails(id: number){
+  this.router.navigate(['passageiro-details', id]);
+
+}
+
+  deletePassageiro(id: number){
+    this.passageiroService.de(id).subscribe( (data: any) => {
+      console.log(data);
+      this.getPassageiros();
+    })
+  }
+
 }
