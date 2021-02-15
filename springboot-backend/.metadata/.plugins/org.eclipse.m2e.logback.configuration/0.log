@@ -625,3 +625,4 @@
 2021-02-11 01:01:01,534 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-02-11 01:01:01,535 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Fernando\Documentos\My PC (DESKTOP-42M1O9I)\Documents\GitHub\CRUD_Springboot_Angular\springboot-backend\springboot-backend\src\test\resources
 2021-02-11 09:05:28,112 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-02-11 10:12:50,748 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

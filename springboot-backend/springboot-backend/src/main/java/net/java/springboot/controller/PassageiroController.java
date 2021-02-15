@@ -27,7 +27,7 @@ public class PassageiroController {
 	
 	@Autowired
 	private PassageiroRepository passageiroRepository;
-
+//COMENTARIO TESTANDO GIT
 	//listar todos passageiros
 	@GetMapping("/passageiros")
 	public List<Passageiro> getAllPassageiros(){
